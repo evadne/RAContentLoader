@@ -32,3 +32,13 @@ You will want to implement `RAContentLoaderDelegate` to know if anything changed
 	@end
 
 `-[<RAContentLoaderDelegate> contentLoader:didUpdateLoadingReference:forKey:]` will be called whenever the loading reference is updated.  You get called when the load has started with a prior value, when the load fails, when the load finishes, and when the load is cancelled.
+
+
+## Licensing
+
+This project is in the public domain.  You can use it and embed it in whatever application you sell, and you can use it for evil.  However, it is appreciated if you provide attribution, by linking to the project page ([https://github.com/evadne/RAContentLoader](https://github.com/evadne/RAContentLoader)) from your application.
+
+
+## Credits
+
+*	[Evadne Wu](http://twitter.com/evadne) at Radius ([Info](http://radi.ws))
