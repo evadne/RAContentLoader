@@ -10,6 +10,16 @@
 		FF62FD8B163762C600FEED0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF62FD8A163762C600FEED0A /* Foundation.framework */; };
 		FF62FD90163762C600FEED0A /* RAContentLoader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FF62FD8F163762C600FEED0A /* RAContentLoader.h */; };
 		FF62FD92163762C600FEED0A /* RAContentLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FF62FD91163762C600FEED0A /* RAContentLoader.m */; };
+		FF62FDA11637686C00FEED0A /* RAContentLoadingReference.m in Sources */ = {isa = PBXBuildFile; fileRef = FF62FDA01637686C00FEED0A /* RAContentLoadingReference.m */; };
+		FFF298C21638FD59003D4745 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF298C11638FD59003D4745 /* SenTestingKit.framework */; };
+		FFF298C41638FD59003D4745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF298C31638FD59003D4745 /* UIKit.framework */; };
+		FFF298C51638FD59003D4745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF62FD8A163762C600FEED0A /* Foundation.framework */; };
+		FFF298CB1638FD59003D4745 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFF298C91638FD59003D4745 /* InfoPlist.strings */; };
+		FFF298CE1638FD59003D4745 /* RAContentLoaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF298CD1638FD59003D4745 /* RAContentLoaderTest.m */; };
+		FFF298D41638FD81003D4745 /* RAContentLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FF62FD91163762C600FEED0A /* RAContentLoader.m */; };
+		FFF298D51638FD81003D4745 /* RAContentLoadingReference.m in Sources */ = {isa = PBXBuildFile; fileRef = FF62FDA01637686C00FEED0A /* RAContentLoadingReference.m */; };
+		FFF298D71638FE7D003D4745 /* RAContentLoaderDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF298D61638FE7D003D4745 /* RAContentLoaderDefines.m */; };
+		FFF298D81638FE7D003D4745 /* RAContentLoaderDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF298D61638FE7D003D4745 /* RAContentLoaderDefines.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +36,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF05FFB716390781001DA8A6 /* RAContentLoadingReferencePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAContentLoadingReferencePrivate.h; sourceTree = "<group>"; };
 		FF62FD87163762C600FEED0A /* libRAContentLoader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRAContentLoader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF62FD8A163762C600FEED0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FF62FD8E163762C600FEED0A /* RAContentLoader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RAContentLoader-Prefix.pch"; sourceTree = "<group>"; };
 		FF62FD8F163762C600FEED0A /* RAContentLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAContentLoader.h; sourceTree = "<group>"; };
 		FF62FD91163762C600FEED0A /* RAContentLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAContentLoader.m; sourceTree = "<group>"; };
+		FF62FD9B1637644D00FEED0A /* RAContentLoaderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAContentLoaderDelegate.h; sourceTree = "<group>"; };
+		FF62FD9D1637645B00FEED0A /* RAContentLoaderDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAContentLoaderDataSource.h; sourceTree = "<group>"; };
+		FF62FD9E1637646D00FEED0A /* RAContentLoaderDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAContentLoaderDefines.h; sourceTree = "<group>"; };
+		FF62FD9F1637659400FEED0A /* RAContentLoadingReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAContentLoadingReference.h; sourceTree = "<group>"; };
+		FF62FDA01637686C00FEED0A /* RAContentLoadingReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAContentLoadingReference.m; sourceTree = "<group>"; };
+		FFF298C01638FD59003D4745 /* RAContentLoaderTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAContentLoaderTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF298C11638FD59003D4745 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FFF298C31638FD59003D4745 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FFF298C81638FD59003D4745 /* RAContentLoaderTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RAContentLoaderTest-Info.plist"; sourceTree = "<group>"; };
+		FFF298CA1638FD59003D4745 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFF298CC1638FD59003D4745 /* RAContentLoaderTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAContentLoaderTest.h; sourceTree = "<group>"; };
+		FFF298CD1638FD59003D4745 /* RAContentLoaderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAContentLoaderTest.m; sourceTree = "<group>"; };
+		FFF298CF1638FD59003D4745 /* RAContentLoaderTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RAContentLoaderTest-Prefix.pch"; sourceTree = "<group>"; };
+		FFF298D61638FE7D003D4745 /* RAContentLoaderDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAContentLoaderDefines.m; sourceTree = "<group>"; };
+		FFF298D916390179003D4745 /* RAContentLoadingReferenceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAContentLoadingReferenceDelegate.h; sourceTree = "<group>"; };
+		FFF298DF163905D9003D4745 /* RAContentLoadingReferenceResultVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAContentLoadingReferenceResultVersion.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +69,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFF298BC1638FD59003D4745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF298C21638FD59003D4745 /* SenTestingKit.framework in Frameworks */,
+				FFF298C41638FD59003D4745 /* UIKit.framework in Frameworks */,
+				FFF298C51638FD59003D4745 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -49,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				FF62FD8C163762C600FEED0A /* RAContentLoader */,
+				FFF298C61638FD59003D4745 /* RAContentLoaderTest */,
 				FF62FD89163762C600FEED0A /* Frameworks */,
 				FF62FD88163762C600FEED0A /* Products */,
 			);
@@ -58,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				FF62FD87163762C600FEED0A /* libRAContentLoader.a */,
+				FFF298C01638FD59003D4745 /* RAContentLoaderTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				FF62FD8A163762C600FEED0A /* Foundation.framework */,
+				FFF298C11638FD59003D4745 /* SenTestingKit.framework */,
+				FFF298C31638FD59003D4745 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -75,6 +116,15 @@
 			children = (
 				FF62FD8F163762C600FEED0A /* RAContentLoader.h */,
 				FF62FD91163762C600FEED0A /* RAContentLoader.m */,
+				FF62FD9B1637644D00FEED0A /* RAContentLoaderDelegate.h */,
+				FF62FD9D1637645B00FEED0A /* RAContentLoaderDataSource.h */,
+				FF62FD9E1637646D00FEED0A /* RAContentLoaderDefines.h */,
+				FFF298D61638FE7D003D4745 /* RAContentLoaderDefines.m */,
+				FF62FD9F1637659400FEED0A /* RAContentLoadingReference.h */,
+				FF62FDA01637686C00FEED0A /* RAContentLoadingReference.m */,
+				FF05FFB716390781001DA8A6 /* RAContentLoadingReferencePrivate.h */,
+				FFF298DF163905D9003D4745 /* RAContentLoadingReferenceResultVersion.h */,
+				FFF298D916390179003D4745 /* RAContentLoadingReferenceDelegate.h */,
 				FF62FD8D163762C600FEED0A /* Supporting Files */,
 			);
 			path = RAContentLoader;
@@ -84,6 +134,26 @@
 			isa = PBXGroup;
 			children = (
 				FF62FD8E163762C600FEED0A /* RAContentLoader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFF298C61638FD59003D4745 /* RAContentLoaderTest */ = {
+			isa = PBXGroup;
+			children = (
+				FFF298CC1638FD59003D4745 /* RAContentLoaderTest.h */,
+				FFF298CD1638FD59003D4745 /* RAContentLoaderTest.m */,
+				FFF298C71638FD59003D4745 /* Supporting Files */,
+			);
+			path = RAContentLoaderTest;
+			sourceTree = "<group>";
+		};
+		FFF298C71638FD59003D4745 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFF298C81638FD59003D4745 /* RAContentLoaderTest-Info.plist */,
+				FFF298C91638FD59003D4745 /* InfoPlist.strings */,
+				FFF298CF1638FD59003D4745 /* RAContentLoaderTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -108,6 +178,24 @@
 			productReference = FF62FD87163762C600FEED0A /* libRAContentLoader.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		FFF298BF1638FD59003D4745 /* RAContentLoaderTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF298D21638FD59003D4745 /* Build configuration list for PBXNativeTarget "RAContentLoaderTest" */;
+			buildPhases = (
+				FFF298BB1638FD59003D4745 /* Sources */,
+				FFF298BC1638FD59003D4745 /* Frameworks */,
+				FFF298BD1638FD59003D4745 /* Resources */,
+				FFF298BE1638FD59003D4745 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RAContentLoaderTest;
+			productName = RAContentLoaderTest;
+			productReference = FFF298C01638FD59003D4745 /* RAContentLoaderTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -130,9 +218,37 @@
 			projectRoot = "";
 			targets = (
 				FF62FD86163762C600FEED0A /* RAContentLoader */,
+				FFF298BF1638FD59003D4745 /* RAContentLoaderTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFF298BD1638FD59003D4745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF298CB1638FD59003D4745 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FFF298BE1638FD59003D4745 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF62FD83163762C600FEED0A /* Sources */ = {
@@ -140,10 +256,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF62FD92163762C600FEED0A /* RAContentLoader.m in Sources */,
+				FF62FDA11637686C00FEED0A /* RAContentLoadingReference.m in Sources */,
+				FFF298D71638FE7D003D4745 /* RAContentLoaderDefines.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF298BB1638FD59003D4745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF298CE1638FD59003D4745 /* RAContentLoaderTest.m in Sources */,
+				FFF298D41638FD81003D4745 /* RAContentLoader.m in Sources */,
+				FFF298D51638FD81003D4745 /* RAContentLoadingReference.m in Sources */,
+				FFF298D81638FE7D003D4745 /* RAContentLoaderDefines.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFF298C91638FD59003D4745 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFF298CA1638FD59003D4745 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FF62FD93163762C600FEED0A /* Debug */ = {
@@ -217,6 +357,36 @@
 			};
 			name = Release;
 		};
+		FFF298D01638FD59003D4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAContentLoaderTest/RAContentLoaderTest-Prefix.pch";
+				INFOPLIST_FILE = "RAContentLoaderTest/RAContentLoaderTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FFF298D11638FD59003D4745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAContentLoaderTest/RAContentLoaderTest-Prefix.pch";
+				INFOPLIST_FILE = "RAContentLoaderTest/RAContentLoaderTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -236,6 +406,16 @@
 				FF62FD97163762C600FEED0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF298D21638FD59003D4745 /* Build configuration list for PBXNativeTarget "RAContentLoaderTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF298D01638FD59003D4745 /* Debug */,
+				FFF298D11638FD59003D4745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
