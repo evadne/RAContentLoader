@@ -118,18 +118,18 @@
 				}
 				
 				if (didFinish) {
-					
-					wSelf.state = RAContentLoadingStateLoaded;
+				
 					wSelf.results = value;
 					wSelf.version = version;
 					NSCParameterAssert(!wSelf.error);
+					wSelf.state = RAContentLoadingStateLoaded;
 					
 				} else {
 					
-					wSelf.state = RAContentLoadingStateError;
 					NSCParameterAssert(!wSelf.results);
 					NSCParameterAssert(!wSelf.version);
 					wSelf.error = error;
+					wSelf.state = RAContentLoadingStateError;
 					
 				}
 			
